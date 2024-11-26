@@ -1,0 +1,112 @@
+/* src/CertificateVerification.css */
+
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  /* Main Container */
+  .certificate-verification-container {
+    padding: 40px;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input and Button Styles */
+  .certificate-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .certificate-input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.2);
+  }
+  
+  .verify-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .verify-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .verify-btn:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  .verify-btn.loading {
+    background-color: #00796b;
+  }
+  
+  /* Error Message Styling */
+  .error-message {
+    color: #f44336;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  /* Result Section */
+  .results-container {
+    margin-top: 30px;
+  }
+  
+  .certificate-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .certificate-card p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .certificate-card p strong {
+    color: #4CAF50;
+  }
+  
